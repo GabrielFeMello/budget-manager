@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 
 // Start the server
 const PORT = process.env.PORT || 8080;
+
 app.listen(PORT, () => {
     console.log(`App ta rodando na porta ${PORT}.`);
     console.log('Ctrl+C para parar o esquema.');
