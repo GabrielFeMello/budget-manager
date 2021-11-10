@@ -20,14 +20,14 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.status(200).send('Hello, world!').end();
+    res.status(200).send('Olá mundo!').end();
 });
 
 // Start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-    console.log(`App listening on port ${PORT}`);
-    console.log('Press Ctrl+C to quit.');
+    console.log(`App ta rodando na porta ${PORT}.`);
+    console.log('Ctrl+C para parar o esquema.');
 });
 // [END gae_node_request_example]
 
