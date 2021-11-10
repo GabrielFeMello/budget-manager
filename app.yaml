@@ -1,0 +1,11 @@
+runtime: nodejs16 # or another supported version
+
+instance_class: F2
+
+env_variables:
+  BUCKET_NAME: "example-gcs-bucket"
+  PROJECT_NAME: "budget-manager"
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
